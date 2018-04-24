@@ -1,0 +1,44 @@
+[2018-04-24 11:29:07,025] ERROR::(23326 139659896518400)::exception - Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/mrityunjoy/Desktop/Shuvo/RESTAPIVENV/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/mrityunjoy/Desktop/Shuvo/RESTAPIVENV/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mrityunjoy/Desktop/Shuvo/RESTAPIVENV/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mrityunjoy/Desktop/Shuvo/RESTAPIVENV/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mrityunjoy/Desktop/Shuvo/RESTAPIVENV/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/mrityunjoy/Desktop/Shuvo/Django-Rest-Api/apps/core/auth/views.py", line 39, in get
+    return render(request, template_name=self.template_name)
+  File "/home/mrityunjoy/Desktop/Shuvo/RESTAPIVENV/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/mrityunjoy/Desktop/Shuvo/RESTAPIVENV/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/mrityunjoy/Desktop/Shuvo/RESTAPIVENV/lib/python3.5/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: core/auth/login.html
+[2018-04-24 11:29:07,078] ERROR::(23326 139659896518400)::basehttp - "GET /login/ HTTP/1.1" 500 107815
+[2018-04-24 11:29:57,774] ERROR::(23326 139659896518400)::exception - Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/home/mrityunjoy/Desktop/Shuvo/RESTAPIVENV/lib/python3.5/site-packages/django/core/handlers/exception.py", line 41, in inner
+    response = get_response(request)
+  File "/home/mrityunjoy/Desktop/Shuvo/RESTAPIVENV/lib/python3.5/site-packages/django/core/handlers/base.py", line 187, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/mrityunjoy/Desktop/Shuvo/RESTAPIVENV/lib/python3.5/site-packages/django/core/handlers/base.py", line 185, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/mrityunjoy/Desktop/Shuvo/RESTAPIVENV/lib/python3.5/site-packages/django/views/generic/base.py", line 68, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "/home/mrityunjoy/Desktop/Shuvo/RESTAPIVENV/lib/python3.5/site-packages/django/views/generic/base.py", line 88, in dispatch
+    return handler(request, *args, **kwargs)
+  File "/home/mrityunjoy/Desktop/Shuvo/Django-Rest-Api/apps/core/auth/views.py", line 39, in get
+    return render(request, template_name=self.template_name)
+  File "/home/mrityunjoy/Desktop/Shuvo/RESTAPIVENV/lib/python3.5/site-packages/django/shortcuts.py", line 30, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "/home/mrityunjoy/Desktop/Shuvo/RESTAPIVENV/lib/python3.5/site-packages/django/template/loader.py", line 67, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/home/mrityunjoy/Desktop/Shuvo/RESTAPIVENV/lib/python3.5/site-packages/django/template/loader.py", line 25, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: core/auth/login.html
+[2018-04-24 11:29:57,835] ERROR::(23326 139659896518400)::basehttp - "GET /login/ HTTP/1.1" 500 107815
